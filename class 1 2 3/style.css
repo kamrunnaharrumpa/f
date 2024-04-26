@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flower{
+    position: relative;
+    display: inline-block;
+}
+.flower_head{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(232, 47, 15);
+    margin-top: 100px;
+
+}
+.flower_head_::after,
+.flower_head::before{
+    position: absolute;
+    content: none;
+    background-color: rgb(255, 10, 10);
+    border-radius: 20px;
+    width: 120px;
+    height: 40;
+    transform: rotate(60dge);
+}
+.flower_head::before{
+    transform: rotate(-60deg);  
+}
+
+
+
+.flower_mid{
+    position: absolute;
+    background-color: rgb(13, 12, 12);
+    height: 15px;
+    width: 15px;
+    left: 0;
+    right: 0; margin: 0 auto;
+    z-index: 9;
+    top: 60px;
+    border-radius: 50px;
+
+}
